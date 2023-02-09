@@ -13,11 +13,5 @@ function updateCounter(value) {
     if (counter + value >= 0) {
         counter += value;
     }
-    if (counter > 4) {
-        setTimeout(() => {
-            counter = 4;
-            el.display.textContent = counter;
-        }, 1000);
-    }
     el.display.textContent = counter;
 }
